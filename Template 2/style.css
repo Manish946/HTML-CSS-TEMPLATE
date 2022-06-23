@@ -1,0 +1,53 @@
+/* Content styling */
+body{
+    margin: 0;
+}
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 0.2fr 0.7fr 0.7fr 0.4fr;
+    grid-template-areas:
+     "header header"
+     "content1 content2"
+     "content1 content3"
+     "footer footer"
+     ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: start;
+    grid-gap: 6px;
+    padding: 10px;
+    }
+
+
+#header{
+    border: 2px solid black;
+    grid-area: header;
+    padding: 10px;
+
+}
+
+#content1{
+    border: 2px solid black;
+    grid-area: content1;
+    padding: 10px;
+
+}
+#content2{
+    border: 2px solid black;
+    grid-area: content2;
+    padding: 10px;
+
+}
+#content3{
+    border: 2px solid black;
+    grid-area: content3;
+    padding: 10px;
+
+}
+#footer{
+    border: 2px solid black;
+    grid-area: footer;
+    padding: 10px;
+
+}
