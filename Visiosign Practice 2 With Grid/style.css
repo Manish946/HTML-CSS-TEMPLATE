@@ -28,7 +28,7 @@ body{
 
 #header-container{
     display: grid;
-    grid-template-columns: 0.6fr 0.2fr 0.2fr;
+    grid-template-columns: 0.7fr 0.15fr 0.15fr;
     grid-template-areas: "logo date time";
 }
 
@@ -59,22 +59,35 @@ body{
     padding: 40px;
 }
 
+#body-container{
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-rows: 0.8fr 0.2fr;
+    grid-template-areas:
+     "content1 content2"
+     "content3 content2"
+    ;
+}
 
 #content1{
-    background-color: blue;
     grid-area: content1;
 
 }
 #content2{
-    background-color: yellow;
     grid-area: content2;
 
 }
 
 #content3{
-    background-color: orange;
-
     grid-area: content3;
+    padding: 10px;
+    color: black;
+    
+}
+
+.image{
+    background-size: cover;
+    object-fit: fill;
 }
 
 
