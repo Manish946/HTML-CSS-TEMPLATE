@@ -1,0 +1,80 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+#container{
+    background-color: green;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-areas: 
+    "header"
+    "body"
+    ;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: start;
+    align-content: center;
+}
+
+#header{
+    grid-area: header;
+    background-color: black;
+    padding: 40px;
+}
+
+#header-container{
+    display: grid;
+    grid-template-columns: 0.6fr 0.2fr 0.2fr;
+    grid-template-areas: "logo date time";
+}
+
+#logo{
+    grid-area: logo;
+
+    font-size: 20px;
+
+}
+
+#date{
+    grid-area: date;
+
+
+}
+
+#time{
+    grid-area: time;
+    text-align: right;
+}
+#time h1{
+    font-size: 40px;
+}
+
+#body{
+    grid-area: body;
+    background-color: whitesmoke;
+    padding: 40px;
+}
+
+
+#content1{
+    background-color: blue;
+    grid-area: content1;
+
+}
+#content2{
+    background-color: yellow;
+    grid-area: content2;
+
+}
+
+#content3{
+    background-color: orange;
+
+    grid-area: content3;
+}
+
+
